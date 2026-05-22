@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>We're Currently Closed</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <%- include('partials/navbar') %>
+
+  <div class="container">
+    <div class="closed-message">
+      <h2>🔒 We're Currently Closed</h2>
+      <p>
+        <strong>Sorry, we are not available at this moment.</strong>
+      </p>
+      <p>
+        Current time: <strong><%= currentTime %></strong>
+      </p>
+      <p>
+        We are only available Monday to Friday, 9:00 AM - 5:00 PM (UTC-5)
+      </p>
+      <p style="margin-top: 1.5rem; font-size: 0.95rem; opacity: 0.9;">
+        Please come back during our working hours, and we'll be happy to assist you!
+      </p>
+    </div>
+
+    <div class="content" style="margin-top: 2rem; text-align: center;">
+      <h3>In the Meantime...</h3>
+      <p>
+        You can still reach us via email at <strong>info@workinghoursapp.com</strong>
+        or leave a message, and we'll get back to you as soon as possible.
+      </p>
+      <p style="margin-top: 1rem;">
+        <a href="/" style="color: #667eea; text-decoration: none; font-weight: 600;">← Back to Home</a>
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2024 Working Hours App. All rights reserved.</p>
+  </footer>
+</body>
+</html>
